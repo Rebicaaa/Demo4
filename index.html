@@ -901,150 +901,107 @@ li, li * hover {
 
 
 
- <!-- SERVICES (hover effect, no dark overlay) -->
-
- 
+<!-- SERVICES (hover effect, fully clickable cards) -->
 <section id="services" class="py-20 bg-gray-50">
   <div class="max-w-7xl mx-auto px-6">
 
     <!-- DROPDOWN TITLE -->
-    <div class="flex items-center justify-center gap-3 cursor-pointer select-none"
-         onclick="toggleServices()">
+    <div class="flex items-center justify-center gap-3 cursor-pointer select-none">
       <h2 class="hero-title text-4xl font-bold text-center text-[#0B3C5D] leading-none">
-
-        Our  Services
+        Our Services
       </h2>
-      <br> <br>
-      <br><br>
-      <!-- <span id="servicesArrow"
-            class="text-blue-800 text-2xl transition-transform duration-300">
-        
-      </span> -->
     </div>
 
     <p class="text-gray-600 leading-relaxed text-base sm:text-lg font-semibold text-center mb-12 max-w-2xl mx-auto"
-        data-aos-delay="150">
+       data-aos-delay="150">
       We offer complete home improvement services — from renovations and flooring to outdoor spaces, painting, and masonry. Our skilled team delivers reliable craftsmanship, quality materials, and results built to last.
     </p>
 
-    <!-- DROPDOWN CONTENT -->
-    <div id="servicesContent" class="overflow-hidden transition-all duration-500">
-
-
-
-      <!-- ⬇️ YOUR GRID (UNCHANGED) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
+    <!-- GRID OF CARDS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-12">
 
       <!-- Card 1 -->
-      
-  <div class="group rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1">
-    
-    <div class="relative overflow-hidden">
-      <img src="assets/images/newww2.jpeg" alt="HVAC"
-           class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
-    </div>
+      <a href="services.html?service=0" class="group block rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/newww2.jpeg" alt="Garage Doors Installation"
+               class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
+        </div>
+        <div class="p-6 transition-all duration-500 group-hover:translate-y-1">
+          <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
+            Garage Doors Installation
+          </h3>
+          <p class="text-gray-600 text-sm mb-4 opacity-80">
+            Professional installation and repair of all major household appliances. We ensure safe setup, proper functionality, and dependable performance across all major brands.
+          </p>
+          <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
+            Read More
+          </span>
+        </div>
+      </a>
 
-    <div class="p-6 transition-all duration-500 group-hover:translate-y-1">
-      <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
-        Garage Doors Installation
-      </h3>
-
-      <p class="text-gray-600 text-sm mb-4 opacity-80">
-        Professional installation and repair of all major household appliances. We ensure safe setup, proper functionality, and dependable performance across all major brands.
-      </p>
-
-      <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
-        Read More
-      </span>
-    </div>
-
-  </div>
-</a>
-
-
-
+      <!-- Card 2 -->
+      <a href="services.html?service=1" class="group block rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1" data-aos-delay="150">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/window.jpg" alt="Doors & Windows"
+               class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
+        </div>
+        <div class="p-6 transition-all duration-500 group-hover:translate-y-1">
+          <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
+            Doors & Windows
+          </h3>
+          <p class="text-gray-600 text-sm mb-4 opacity-80">
+            Expert assembly of furniture from all brands and styles—fast, precise, and hassle-free.
+          </p>
+          <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
+            Read More
+          </span>
+        </div>
+      </a>
 
       <!-- Card 3 -->
-      
-  <div class="group rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1" data-aos-delay="300">
-    <div class="relative overflow-hidden">
-      <img src="assets/images/window.jpg" alt="Plumbing Services"
-           class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
-    </div>
-    <div class="p-6">
-      <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
-
-        Doors & Windows 
-      </h3>
-      <p class="text-gray-600 text-sm mb-4 opacity-80">
-        Expert assembly of furniture from all brands and styles—fast, precise, and hassle-free.
-      </p>
-      <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
-  Read More
-</span>
-    </div>
-  </div>
-</a>
-
+      <a href="services.html?service=2" class="group block rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1" data-aos-delay="300">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/ban2.jpg" alt="Bathroom Remodeling"
+               class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
+        </div>
+        <div class="p-6 transition-all duration-500 group-hover:translate-y-1">
+          <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
+            Bathroom Remodeling
+          </h3>
+          <p class="text-gray-600 text-sm mb-4 opacity-80">
+            Expert assembly of furniture from all brands and styles—fast, precise, and hassle-free.
+          </p>
+          <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
+            Read More
+          </span>
+        </div>
+      </a>
 
       <!-- Card 4 -->
+      <a href="services.html?service=3" class="group block rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1" data-aos-delay="450">
+        <div class="relative overflow-hidden">
+          <img src="assets/images/kitchen.jpg" alt="Kitchen Remodeling"
+               class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
+        </div>
+        <div class="p-6 transition-all duration-500 group-hover:translate-y-1">
+          <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
+            Kitchen Remodeling
+          </h3>
+          <p class="text-gray-600 text-sm mb-4 opacity-80">
+            Expert assembly of furniture from all brands and styles—fast, precise, and hassle-free.
+          </p>
+          <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
+            Read More
+          </span>
+        </div>
+      </a>
 
-  <div class="group rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1" data-aos-delay="450">
-    <div class="relative overflow-hidden">
-      <img src="assets/images/ban2.jpg" alt="TV Wall Mounting"
-           class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
-    </div>
-    <div class="p-6">
-      <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
+     
 
-        Bathroom Remodeling
-
-      </h3>
-      <p class="text-gray-600 text-sm mb-4 opacity-80">
-        Expert assembly of furniture from all brands and styles—fast, precise, and hassle-free.
-      </p>
-      <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
-  Read More
-</span>
-    </div>
-  </div>
-</a>
-
-
-<!-- Card 5 -->
-
-  <div class="group rounded-xl overflow-hidden bg-white shadow-md transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:-translate-y-1" data-aos-delay="600">
-    <div class="relative overflow-hidden">
-      <img src="assets/images/kitchen.jpg" alt="Furniture Assembly"
-           class="h-64 w-full object-cover transition duration-700 group-hover:scale-110">
-    </div>
-    <div class="p-6">
-      <h3 class="text-xl font-semibold text-[#0B3C5D] mb-2 group-hover:text-[#0B3C5DBF] transition">
-
-        Kitchen Remodeling   
-      </h3>
-      <p class="text-gray-600 text-sm mb-4 opacity-80">
-        Expert assembly of furniture from all brands and styles—fast, precise, and hassle-free.
-      </p>
-      <span class="inline-block bg-[#0B3C5D] text-white px-5 py-2 rounded-full hover:bg-[#0B3C5DBF] transition">
-  Read More
-</span>
-
-    </div>
-  </div>
-</a>
-
-
-
-
-
-
-</div>
-    </div>
-
-    </div>
+    </div> <!-- end grid -->
   </div>
 </section>
+
 
 
 <!-- WHY CHOOSE US SECTION -->
@@ -1734,6 +1691,8 @@ li, li * hover {
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="assets/js/script.js"></script>
+
+
 
 
 </body>
